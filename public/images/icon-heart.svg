@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d0f1c" />
+      <stop offset="50%" stop-color="#1a0810" />
+      <stop offset="100%" stop-color="#0d0508" />
+    </linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb3c6" />
+      <stop offset="30%" stop-color="#f43f5e" />
+      <stop offset="60%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#e11d48" flood-opacity="0.5" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)" />
+  <rect width="512" height="512" rx="96" fill="url(#glow)" />
+  <g transform="translate(256,210) scale(0.85)" filter="url(#shadow)">
+    <path d="M0-60 C-40-120,-140-80,-140-20 C-140,40,0,110,0,140 C0,110,140,40,140-20 C140-80,40-120,0-60Z" fill="url(#heart)" />
+  </g>
+  <g transform="translate(256,140)" opacity="0.7">
+    <circle cx="-70" cy="-20" r="4" fill="#ffb3c6" />
+    <circle cx="80" cy="-30" r="3" fill="#ffb3c6" opacity="0.6" />
+    <circle cx="0" cy="-70" r="3.5" fill="#fda4af" opacity="0.5" />
+    <circle cx="-90" cy="-50" r="2.5" fill="#fecdd3" opacity="0.4" />
+    <circle cx="95" cy="-55" r="2" fill="#fecdd3" opacity="0.4" />
+  </g>
+</svg>

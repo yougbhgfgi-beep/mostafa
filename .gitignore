@@ -1,0 +1,6 @@
+﻿node_modules/
+test-debug.js
+maze-test.png
+maze-debug.png
+.DS_Store
+Thumbs.db
