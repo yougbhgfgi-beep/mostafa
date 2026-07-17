@@ -186,12 +186,10 @@ window.addEventListener('resize', () => {
 
 // Back to main site
 function goBack(){
-  if(window.opener){
-    const el=window.opener.document.getElementById('maze-game');
-    if(el)el.scrollIntoView({behavior:'smooth'});
+  if(window.opener || window.history.length <= 2){
     window.close();
   } else {
-    window.location.href = '/';
+    window.location.href = './index.html';
   }
 }
 
@@ -199,6 +197,7 @@ function goBack(){
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('backBtn').addEventListener('click', goBack);
   document.getElementById('exitGameBtn').addEventListener('click', goBack);
+  document.getElementById('retryBtn').addEventListener('click', () => { resetGame(); });
 });
 
 // Init
